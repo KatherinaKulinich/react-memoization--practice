@@ -1,0 +1,22 @@
+.factorialCalculation {
+    padding: 2rem 1rem;
+
+}
+.factorialCalculation__Label {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.factorialCalculation__Input {
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.factorialCalculation__Error {
+    color: red;
+}
+
+.factorialCalculation__Result {
+    font-weight: bold;
+}
