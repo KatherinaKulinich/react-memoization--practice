@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-import style from './index.module.scss';
+import style from './index.module.css';
 
-const MAX_NUMBER = 20;
+interface FactorialCalculationProps {
+    array: { id: number; title: string }[];
+    onClick: () => void;
+}
 
-function FactorialCalculation({}) {
+function FactorialCalculation(props: FactorialCalculationProps) {
+    const MAX_NUMBER = 20;
+
+    const { array, onClick } = props;
+
     const [currentNum, setCurrentNum] = useState<any>(MAX_NUMBER);
     const [error, setError] = useState<string | null>(null);
 
@@ -45,13 +52,6 @@ function FactorialCalculation({}) {
         </section>
     );
 }
-
-// 0! = 1
-// n! = n * (n - 1)!
-
-// 2! = 1 * 2 = 2;
-// 3! = 1 * 2 * 3 = 6;
-// 4! = 1 * 2 * 3 * 4 = 24;
 
 function factorial(n: number): any {
     if (n < 0) {

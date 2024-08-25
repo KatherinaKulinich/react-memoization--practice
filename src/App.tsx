@@ -1,4 +1,6 @@
 import React from 'react';
+import './App.css';
+import HeavyComponent from './components/HeavyComponent';
 
 export const App: React.FC = ({}) => {
     // const [currentState, setCurrentState] = useState('');
@@ -14,5 +16,9 @@ export const App: React.FC = ({}) => {
     // console.log('render_1', myCalculation1)
     // console.log('render_2', myCalculation2)
 
-    return <div></div>;
+    return (
+        <div>
+            <HeavyComponent />
+        </div>
+    );
 };
